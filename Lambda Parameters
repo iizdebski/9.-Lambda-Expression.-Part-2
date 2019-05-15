@@ -1,0 +1,38 @@
+Lambda Parameters
+
+Since Java lambda expressions are effectively just methods, lambda
+expressions can take parameters just like methods.
+These parameters have to match the parameters of the method on
+the single method interface.
+Zero Parameters
+If the method you are matching your lambda expression against
+takes no parameters, then you can write yourr lambda expression like
+this:
+0-> System.out.printIn("Zero parameter lambda");
+
+Notice how the parentheses have no content in between.
+That is to signal that the lambda takes no parameters.
+
+One Parameter
+
+If the methoid you are matching your Java lambda expression against
+takes one parameter, you can write the lambda expression like this:
+
+(param)->System.out.printIn("One parameter:"+param);
+
+Notice the parameter is listed inside the parentheses.
+When a lambda expression takes a singe parameter, you can also
+omit the parentheses, like this:
+
+param -> System.out.printIn("One parameter:" + param);
+
+Multiple parameters
+
+If the method you match in your Java lambda expression takes
+multiple parameters, the parameters need to be listed inside
+parentheses. Here is how that looks in Java code:
+
+(p1, p2)->System.out.printIn("Multiple parameters:" + p1 + "," +
+p2);
+
+Only when the method takes a single parameter then parentheses are omitted.
